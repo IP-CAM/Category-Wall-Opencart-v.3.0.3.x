@@ -14,7 +14,7 @@ class ControllerExtensionModuleOCNCategoryWall extends Controller {
 
 			$this->session->data['success'] = $this->language->get('text_success');
 			
-			if ($this->request->post['apply']) {
+			if (isset($this->request->post['apply']) && $this->request->post['apply']) {
 				$this->response->redirect($this->url->link('extension/module/ocn_category_wall', 'user_token=' . $this->session->data['user_token'] . '&type=module', true));
 			}
 
