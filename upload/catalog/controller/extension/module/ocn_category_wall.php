@@ -11,7 +11,7 @@ class ControllerExtensionModuleOCNCategoryWall extends Controller {
 		$data['title'] = $this->config->get('module_ocn_category_wall_title');
 		
 		$category_id = 0;
-		$limit = $this->config->get('module_ocn_category_wall_child_limit');
+		$limit = $this->config->get('module_ocn_category_wall_subcategory_limit');
 		$length = $this->config->get('module_ocn_category_wall_description_length');
 
 		$categories = $this->model_extension_module_ocn_category_wall->getCategories($category_id);
@@ -20,7 +20,7 @@ class ControllerExtensionModuleOCNCategoryWall extends Controller {
 			// Level 2
 			$children_data = array();
 
-			if ($this->config->get('module_ocn_category_wall_child_status')) {
+			if ($this->config->get('module_ocn_category_wall_subcategory_status')) {
 				$children = $this->model_extension_module_ocn_category_wall->getCategories($category['category_id'], $limit);
 
 				foreach ($children as $child) {

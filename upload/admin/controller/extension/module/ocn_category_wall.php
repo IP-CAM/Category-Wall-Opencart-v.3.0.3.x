@@ -32,8 +32,8 @@ class ControllerExtensionModuleOCNCategoryWall extends Controller {
 			'module_ocn_category_wall_image_status' => 1,
 			'module_ocn_category_wall_image_width' => 220,
 			'module_ocn_category_wall_image_height' => 80,
-			'module_ocn_category_wall_child_status' => 1,
-			'module_ocn_category_wall_child_limit' => 2,
+			'module_ocn_category_wall_subcategory_status' => 1,
+			'module_ocn_category_wall_subcategory_limit' => 2,
 			'module_ocn_category_wall_description_status' => 1,
 			'module_ocn_category_wall_description_length' => 30
 		];
@@ -127,16 +127,16 @@ class ControllerExtensionModuleOCNCategoryWall extends Controller {
 			$data['module_ocn_category_wall_image_height'] = $this->config->get('module_ocn_category_wall_image_height');
 		}
 		
-		if (isset($this->request->post['module_ocn_category_wall_child_status'])) {
-			$data['module_ocn_category_wall_child_status'] = $this->request->post['module_ocn_category_wall_child_status'];
+		if (isset($this->request->post['module_ocn_category_wall_subcategory_status'])) {
+			$data['module_ocn_category_wall_subcategory_status'] = $this->request->post['module_ocn_category_wall_subcategory_status'];
 		} else {
-			$data['module_ocn_category_wall_child_status'] = $this->config->get('module_ocn_category_wall_child_status');
+			$data['module_ocn_category_wall_subcategory_status'] = $this->config->get('module_ocn_category_wall_subcategory_status');
 		}
 		
-		if (isset($this->request->post['module_ocn_category_wall_child_limit'])) {
-			$data['module_ocn_category_wall_child_limit'] = $this->request->post['module_ocn_category_wall_child_limit'];
+		if (isset($this->request->post['module_ocn_category_wall_subcategory_limit'])) {
+			$data['module_ocn_category_wall_subcategory_limit'] = $this->request->post['module_ocn_category_wall_subcategory_limit'];
 		} else {
-			$data['module_ocn_category_wall_child_limit'] = $this->config->get('module_ocn_category_wall_child_limit');
+			$data['module_ocn_category_wall_subcategory_limit'] = $this->config->get('module_ocn_category_wall_subcategory_limit');
 		}
 		
 		if (isset($this->request->post['module_ocn_category_wall_description_status'])) {
@@ -175,11 +175,11 @@ class ControllerExtensionModuleOCNCategoryWall extends Controller {
 			$this->error['height'] = $this->language->get('error_height');
 		}
 		
-		if (!$this->request->post['module_ocn_category_wall_child_limit']) {
+		if (!$this->request->post['module_ocn_category_wall_subcategory_limit'] && $this->request->post['module_ocn_category_wall_subcategory_limit'] == '') {
 			$this->error['limit'] = $this->language->get('error_limit');
 		}
 		
-		if (!$this->request->post['module_ocn_category_wall_description_length']) {
+		if (!$this->request->post['module_ocn_category_wall_description_length'] && $this->request->post['module_ocn_category_wall_description_length'] == '') {
 			$this->error['length'] = $this->language->get('error_length');
 		}
 		
