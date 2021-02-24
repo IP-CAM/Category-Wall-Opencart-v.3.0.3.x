@@ -1,31 +1,62 @@
 # Category Wall
-Стена категорий
+Wall categories
 
-## Описание
-Добавляет вывод категорий и подкатегорий на страницах ОпенКарт.
+## Description
+Adds the output of categories and subcategories on the OpenCart pages.
 
-### Установка через ocmod
-- Зайти в панель администрирования Вашего магазина
-- Перейти в Расширения->Установщик
-- Нажать кнопку "Загрузить"
-- Выбрать архив "ocn__category_wall.ocmod.zip"
-- Дождаться завершения установки
-- Перейти в Расширения->Модификации
-- Нажать кнопку "Обновить"
-- Установить в админке модуль Стена Категорий
+### Installation via OCMOD
+- Go to the Administration Panel of Your Store
+- Go to expansion-> Installer
+- Press the "Download" button
+- Select archive "Ocn__Category_wall.ocmod.zip"
+- wait for the installation
+- Go to expansion-> Modifications
+- Press the "Update" button
+- Install in the admin module wall categories
 
-### Установка ручная
-- Скопировать содержимое папки upload в корень магазина
-- Установить в админке модуль Стена Категорий
+### Installation manual
+- Copy the contents of the Upload folder in the store root
+- Install in the admin module wall categories
 
-### Совместимость
-- OpenCart 3.0.3.x
+### compatibility
+- OpenCart 3.0.3.x.
 
-### Сообщение об ошибке
-- [Тема поддержки расширения](https://forum.opencart.name/threads/Стена-Категорий.56/)
+### error message
+- [Expansion Support Theme] (https://forum.opencart.name/threads/Sthen -Categories.56/)
 
-### Лицензия
-[GNU General Public License version 3 (GPLv3)](LICENSE)
+### License
+[GNU GENERAL PUBLIC LICENSE VERSION 3 (GPLV3)] (License)
 
-## Ссылки
-- [Ресурс на форуме](https://forum.opencart.name/resources/Стена-Категорий.32/)
+## Links
+- [resource on the forum] (https://forum.opencart.name/resources/Sthen -Categories.32/) # Category Wall
+Wall categories
+
+## Description
+Adds the output of categories and subcategories on the OpenCart pages.
+
+### Installation via OCMOD
+- Go to the Administration Panel of Your Store
+- Go to expansion-> Installer
+- Press the "Download" button
+- Select archive "Ocn__Category_wall.ocmod.zip"
+- wait for the installation
+- Go to expansion-> Modifications
+- Press the "Update" button
+- Install in the admin module wall categories
+
+### Installation manual
+- Copy the contents of the Upload folder in the store root
+- Install in the admin module wall categories
+
+### compatibility
+- OpenCart 3.0.3.x.
+
+### error message
+- [Expansion Support Theme] (https://forum.opencart.name/threads/Sthen -Categories.56/)
+
+### License
+[GNU GENERAL PUBLIC LICENSE VERSION 3 (GPLV3)] (License)
+
+## Links
+- [Forum resource] (https://forum.opencart.name/resources/Sthen -Categories.32/)
+- 
