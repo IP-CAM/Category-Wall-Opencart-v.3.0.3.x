@@ -59,4 +59,3 @@ Adds the output of categories and subcategories on the OpenCart pages.
 
 ## Links
 - [Forum resource] (https://forum.opencart.name/resources/Sthen -Categories.32/)
-- 
